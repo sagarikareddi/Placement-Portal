@@ -1,0 +1,880 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;    
+}
+
+/* home page 1 ------------ */
+
+.homeimage1{
+  background-image: url('homeimage.png');
+  height:100vh;
+  width:100%;
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:center;
+  position:absolute;
+}
+.logo{
+    position:relative;
+    margin-top: 20px;
+    margin-left:40px;
+    height:90px;
+    width:150px;
+    
+    /* login-box------------ */
+}
+.loginbox{
+   width:360px;
+   height:390px;
+   background: #000;
+   color:#fff;
+   top:50%;
+   left:50%;
+   position:absolute;
+   transform:translate(-50%,-50%);
+   box-sizing:border-box;
+   margin-top: 150px;
+   padding:70px 30px;
+}
+
+.loginbox .btn{
+  position: relative;
+  float: right;
+  right: 23%;
+}
+.loginbox .btn button{
+  font-size: 20px;
+  padding: 5px 60px;
+  border-radius: 20px;
+}
+.loginbox .btn button:hover{
+  background-color: rgb(69, 131, 131);
+  color: white;
+  cursor: pointer;
+}
+.loginbox a{
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  color:red;
+  position: relative;
+  top: 18%;
+}
+.avatar{
+  border-radius: 50%;
+  position:absolute;
+  margin-left: 110px;
+  top:-50px;
+
+}
+.loginbox h1{
+  margin:0;
+  padding:0 0 20px;
+  font-size:30px;
+}
+.loginbox p{
+  margin:0;
+  padding:0 0 20px;
+  font-weight:bold;
+
+}
+.loginbox input{
+  width:100%;
+  margin-bottom:20px;
+
+}
+.loginbox input[type="text"],input[type="password"]
+{
+  border:none;
+  border-bottom: 1px solid rgb(255, 249, 249);
+  background: transparent;
+  outline:none;
+  height:40px;
+  color:#fff;
+  font-size:18px;
+
+}
+.loginbox input[type="submit"]
+{
+ border:none;
+ outline:none;
+ height:40px;
+ background:#c4bfbf;
+ color:rgb(0, 0, 0);
+ font-size: 20px;
+ border-radius:20px;
+} 
+.loginbox input[type="submit"]:hover{
+  cursor:pointer;
+  background:rgb(24, 79, 79);
+  color:white;
+
+}
+
+.loginbox a:hover{
+   color:rgb(255, 84, 84);
+}
+
+
+/*----------- Student Placement Officer start---------------- */
+.homepage2{
+  background-color: rgb(0, 0, 0);
+  height:100vh;
+  width:100%; 
+  position:absolute;
+}
+.heading{
+  background-repeat: no-repeat;
+  height:140px;
+  margin-left: 450px;
+}
+
+.container{
+  position:relative;
+  width:1200px;
+  height:300px;
+  /* margin:240px; */
+  background: rgb(0, 0, 0);
+  top: 35%;
+  left: 5%;
+    
+}
+.container .box{
+  position:relative;
+  width:calc(500px - 30px);
+  height:calc(300px - 30px);
+  background:rgb(255, 255, 255);
+  float:left;
+  margin:15px;
+  box-sizing:border-box;
+  overflow:hidden;
+  border-radius: 10px;
+}
+.container .box .icon{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgb(25, 92, 86);
+  transition:0.5s;
+  z-index: 1;
+
+}
+.container .box:hover .icon{
+  top:20px;
+  left:calc(50% - 40px);
+  width:80px;
+  height:80px;
+  border-radius:50%;
+
+}
+.container .box .icon .fa{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size:80px;
+  transition:0.5s;
+  color:#fff;
+}
+.container .box:hover .icon .fa{
+  font-size:55px;
+
+}
+.container .box:hover .content{
+  top:100px;
+  opacity:1 ;
+}
+ .container .box .content{
+  position:absolute;
+  top:100%;
+  height:calc(100% - 100px);
+  text-align: center;
+  
+  padding:20px;
+  box-sizing: border-box;
+  transition:0.5s;     
+ }
+
+ .container .box .content h3{
+  margin-top: 20px;
+  font-size:36px;
+  margin-left: 10px;
+  padding:0;
+ }
+ .container .box .content h3 a{
+  color: black;
+  text-decoration: none;
+  text-align: center;
+ }
+ .container .box .content h3 a button{
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 1%;
+  font-family: sans-serif;
+  cursor: pointer;
+ }
+
+ .container .box .content h3 a button:hover{
+  background:rgb(49, 104, 103) ;
+ }
+ /* officer button click here  */
+
+ .container .box .content .btn a button{
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 1%;
+  font-family: sans-serif;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  top: 2%;
+  border-radius: 10px;
+ }
+
+ .container .box .content .btn a button:hover{
+  background:rgb(49, 104, 103) ;
+  color: white;
+
+ }
+
+
+/* side nav bar start  */
+.side_bar{
+  width: 35%;
+  min-height: 100%;
+  position: relative;
+  float: right;
+  left: 18%;
+  bottom: 99%;
+  /* border: 1px solid red; */
+  /* color: wheat; */
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(45deg,#8460ed,#ff1252); */
+  box-sizing: border-box;
+
+}
+
+.side_menu{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  /* background: #0f0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side_menu li{
+  position: absolute;
+  list-style: none;
+  transform-origin :100px;
+  left: 0;
+  transition: .5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(89px);
+}
+
+.side_menu.active li{
+  transform: rotate(calc(360deg / 8 * var(--i)));
+
+}
+
+.side_menu li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  transform: rotate(calc(360deg / -8 * var(--i)));
+  box-shadow: 0 0 4px rgba(0,0,0,0.15);
+  color: rgb(197, 89, 89);
+  transition: .5s;
+}
+
+.side_menu li a:hover{
+  color: rgb(124, 8, 28);
+  font-size: 20px;
+}
+
+.side_toggle{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0,0,0,0.15);
+  font-size: 2em;
+  transition:transform 1.25s;
+}
+
+.side_menu.active .side_toggle{
+  transform: rotate(315deg);
+}
+/* side nav bar end */
+
+/*----------- Student Placement Officer end---------------- */
+
+
+
+
+
+/* index 3 -------------------*/
+
+.tableheading{
+  color:#fff;
+  margin-left: 560px;
+  margin-top: 40px;
+  font-size: 30px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+body{
+  font-family: sans-serif;
+  background: linear-gradient(104deg, #093536, #060e0e);
+  background-size: cover;
+}
+.tablecontainer0{
+  display: flex;
+  justify-content: center;
+  margin:6vh auto;
+  width: 85%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+table{
+  width: 100%;
+  box-shadow: 15px 15px #0000000d;
+  border-collapse: collapse;
+}
+
+tr:nth-of-type(odd){
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+tr:nth-of-type(even){
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+th{
+  background-color: #239a7e;
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+td,th{
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+
+
+
+
+
+@media only screen and (max-width:768px),
+(min-device-width:768px) and (max-device-width:992px){
+  .tablecontainer0{
+    width:95%;
+    background: transparent;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr{
+    display: block;
+  }
+
+  thead tr{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr{
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  td{
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  td::before{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  td:nth-of-type(1)::before{
+    content: "Drive code";
+  }
+
+  td:nth-of-type(2)::before{
+    content: "Drive date";
+  }
+
+  td:nth-of-type(3)::before{
+    content: "Register By";
+  }
+
+  td:nth-of-type(4)::before{
+    content: "Company";
+  }
+
+  td:nth-of-type(5)::before{
+    content: "Streams Eligible";
+  }
+
+  td:nth-of-type(6)::before{
+    content: "Venue";
+  }
+  td:nth-of-type(7)::before{
+    content: "Job Profile";
+  }
+  td:nth-of-type(8)::before{
+    content: "Status";
+  }
+  td:nth-of-type(9)::before{
+    content: "Is Eligible";
+  }
+  td:nth-of-type(10)::before{
+    content: "Registered";
+  }
+  
+
+}
+
+/* Upcoming placement drive------------------------------ */
+
+body{
+  font-family: sans-serif;
+  background: linear-gradient(104deg, #093536, #060e0e);
+  background-size: cover;
+}
+
+.tabhead{
+  color:white;
+  margin-left: 500px;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.table-container1{
+  display: flex;
+  justify-content: center;
+  margin:7vh auto;
+  width: 85%;
+  height:200px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+table{
+  width: 100%;
+  box-shadow: 15px 15px #0000000d;
+  border-collapse: collapse;
+}
+
+.table-container1 tr:nth-of-type(odd){
+  background-color: #e3e4e6;
+  color: rgb(0, 0, 0);
+}
+.table-container1 tr:nth-of-type(even){
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+}
+
+.table-container1 th{
+  background-color: #239a7e; 
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.table-container1 td,th{
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+
+
+.table-container1 .btn{
+  color: #fff;
+  background-color: #37BC9B;
+  font-size: 13px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.table-container1 .btn:hover{
+  background-color: #55efc8;
+  color:black;
+}
+
+
+@media only screen and (max-width:768px),
+(min-device-width:768px) and (max-device-width:992px){
+  .table-container1{
+    width:95%;
+    background: transparent;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr{
+    display: block;
+  }
+
+  .table-container1 thead tr{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table-container1 tr{
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  .table-container1 td{
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  .table-container1 td::before{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .table-container1 td:nth-of-type(1)::before{
+    content: "#";
+  }
+
+  .table-container1 td:nth-of-type(2)::before{
+    content: "Full Name";
+  }
+
+  .table-container1 td:nth-of-type(3)::before{
+    content: "Age";
+  }
+
+  .table-container1 td:nth-of-type(4)::before{
+    content: "Status";
+  }
+
+  .table-container1 td:nth-of-type(5)::before{
+    content: "Job Title";
+  }
+
+  .table-container1 td:nth-of-type(6)::before{
+    content: "Action";
+  }
+
+  
+
+}
+
+
+
+/* announcement................... */
+
+.announcementheading{
+  color:#000;
+  background-color: white;
+ 
+}
+
+
+.tablecontainer2 th{
+  background-color: #239a7e; 
+  color: rgb(255, 255, 255);
+  width:83%;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+}
+.tablecontainer2{
+  display: block;
+  justify-content: center;
+  margin:7vh auto;
+  width: 85%;
+  
+  height:500px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+
+
+/* placement summary------------------- */
+
+
+body{
+  font-family: sans-serif;
+  background: linear-gradient(104deg, #093536, #060e0e);
+  background-size: cover;
+}
+.tablecontainer3{
+  display: flex;
+  justify-content: center;
+  margin:6vh auto;
+  width: 98%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+table{
+  width: 100%;
+  box-shadow: 15px 15px #0000000d;
+  border-collapse: collapse;
+}
+
+.table-container3 th{
+  background-color: #239a7e; 
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.table-container3 td,th{
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+.p_summaryheading{
+  color:#fff;
+  margin-left: 560px;
+  margin-top: 40px;
+  font-size: 22px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/* Unblock/block students------------------ */
+body{
+  font-family: sans-serif;
+  background: linear-gradient(104deg, #093536, #060e0e);
+  background-size: cover;
+}
+.tablecontainer4{
+  display: flex;
+  justify-content: center;
+  margin:6vh auto;
+  width: 98%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+table{
+  width: 100%;
+  box-shadow: 15px 15px #0000000d;
+  border-collapse: collapse;
+}
+
+.tablecontainer4 th{
+  background-color: #239a7e; 
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.tablecontainer4 td,th{
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+.blockunblockheading{
+  color:#fff;
+  margin-left: 560px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.statusred{
+  color:red;
+}
+.statusgreen{
+  color:green;
+}
+
+/* view Drives Table------------------- */
+.tablecontainer5{
+  display: flex;
+  justify-content: center;
+  margin:6vh auto;
+  width: 85%;
+  height:350px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 70px;
+
+}
+
+
+
+.tablecontainer5 td,th{
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+.tablecontainer5 h1{
+  margin:20px;
+  color:black;
+  text-align:center;
+}
+.tablecontainer5heading{
+  color:white;
+  text-align: center;
+  margin: 35px;
+  font-size: 30px;
+}
+
+
+/* Students -summary table----------- */
+
+#summary{
+  width: 100%;
+  height: 130vh;
+}
+
+.tablecontainer6{
+  display: flex;
+  justify-content: center;
+  margin:6vh auto;
+  width: 85%;
+  height:390px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px;
+ 
+  overflow-y: scroll;
+  overflow-x: scroll;
+  
+}
+
+.tablecontainer6 td,th{
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+.tablecontainer6 h1{
+  margin:20px;
+  color:black;
+  background-color: white;
+}
+.tablecontainer6heading{
+  color:white;
+ 
+  text-align: center;
+  margin: 35px;
+  font-size: 30px;
+}
+
+.graph{
+  width: 85%;
+  /* padding: 0 5%; */
+  height: 40%;
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  position: relative;
+  /* left: 10%; */
+  top: 2%;
+  display: flex;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.graph .v1 video{
+  width: 45%;
+  height: 100%;
+  position: relative;
+}
+.graph .v2 video{
+  width: 110%;
+  height: 87%;
+  position: relative;
+  top: 1%;
+  right: 7%;
+}
+
+.graph .v1 h3{
+  position: relative;
+  bottom: 5%;
+}
+
+.graph .v2 h3{
+  width: 190%;
+  position: relative;
+  right: 45%;
+  bottom: 5%;
+
+}
+
+.graph  video{
+  width: 100%;
+  height: 100%;
+  bottom: 5%;
+}

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;        
+}
+
+/* main content */
+.drive{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('Images/19873.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.drive .content{
+    max-width: 800px;
+    text-align: center;
+}
+.drive .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: rgba(23, 21, 21, 0.831);
+}
+.drive .content p{
+    font-weight: 00;
+    color: rgb(8, 74, 7);
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    /* height: 100vh; */
+    border: 4px solid rgb(34, 99, 88);
+    border-radius: 20px;
+}
+.cfrom1{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.cfrom1 h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+    bottom: 10%;
+}
+
+.cfrom1 .inputbox{
+    position: relative;
+    width: 100%;
+    margin: top 10px ;
+}
+
+.cfrom1 .inputbox input,
+.cfrom1 .inputbox textarea
+{
+    width: 100%;
+    margin:10px 0 ;
+    padding: 5px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.cfrom1 .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.cfrom1 .inputbox input:focus ~ span,
+.cfrom1 .inputbox input:valid ~ span,
+.cfrom1 .inputbox textarea:focus ~ span,
+.cfrom1 .inputbox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.cfrom1 .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* .cfrom1.skills{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    border: 1px solid red;
+} */
+
+/* form part 2 start */
+.cform2{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    /* opacity: 0.2; */
+    position: relative;
+    top: 65%;
+    
+}
+.cform2 h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.cform2 .inputbox{
+    position: relative;
+    width: 100%;
+    margin: top 10px ;
+}
+
+.cform2 .inputbox input,
+.cform2 .inputbox textarea
+{
+    width: 100%;
+    margin:10px 0 ;
+    padding: 5px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.cform2 .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.cform2 .inputbox input:focus ~ span,
+.cform2 .inputbox input:valid ~ span,
+.cform2 .inputbox textarea:focus ~ span,
+.cform2 .inputbox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.cform2 .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* normal text form start */
+.normal_text_form{
+    /* font-size: 26px; */
+    color: #666; 
+}
+/* normal text form end */

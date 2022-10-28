@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(0,0,0);
+}
+h2{
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 30px;
+    margin-top: 2%;
+    
+}
+.table_content{
+    width: 99%;
+    height: 90vh;
+    /* border: 2px solid red; */
+    overflow: scroll;
+}
+.table_content table{
+    position: relative;
+    top: 5%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+    border-collapse: collapse;
+    background-color: white;
+    /* overflow: scroll; */
+}
+.table_content thead tr td{
+    padding: 8px;
+    background-color: rgb(33, 108, 95);
+    color:white;
+    width: 3%;
+    font: 130px;
+    height: 80%;
+}
+.table_content tr{
+    padding: 8px;
+    border: 2px solid black;
+    text-align: center;
+    /* width: 50%; */
+    height: 20%;
+}
+.table_content td{
+    padding: 8px;
+    border: 2px solid black;
+    text-align: center;
+    width: 10%;
+    height: 30%;
+}

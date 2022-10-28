@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="eligible.css">
+</head>
+<body id="main_body">
+    <center>
+        <div id="main_div">
+            <table border="3px solid red" id="main_table">
+            <tr id="0" class="0">
+                <th class="S_No">S. No</th>
+                <th class="Name">Name</th>
+                <th class="Reg._No">Reg. No</th>
+                <th class="Btach">Batch Year</th>
+                <th class="Branch">Branch</th>
+                <th class="CGPA">CGPA</th>
+                <th class="Attendence">Attendence</th>
+                <th class="Eligibility">Eligibility</th>
+            </tr>
+            <tr id="1" class="1">
+                <td id="1S">1</td>
+                <td id="1d1">Abc</td>
+                <td id="1d2">12000000</td>
+                <td id="1d3">2020</td>
+                <td id="1d4">CSE</td>
+                <td id="1d5">7</td>
+                <td id="1d6">75</td>
+                <td id="1E">No</td>
+            </tr>
+        </table>
+        <div id="GM1">
+            <center>
+                    <label for="GM"><strong>&nbsp;&nbsp;&nbsp; Rows Manually :</strong></label>
+                    <input type="number" id="GM" placeholder="enter the no. of rows">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button onclick="gen_man()">Generate</button>
+                    <button onclick="get_Gen_Man()" class="get_el_bu">Get Eligibility</button>
+        </center>
+        </div>
+        <br>
+    <center>
+        <div id="GR1">
+                <label for="GR"><strong> Rows Randomly :</strong></label>
+                <input type="number" id="GR" placeholder="enter the no. of rows">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onclick="get_ran()">Generate</button>
+                <button onclick="get_Gen_Ran()" class="get_el_bu" >Get Eligibility</button>
+        </div>
+    </center>
+        <div id="sort">
+                <label for="Gen"><strong> Choose Method to Sort :</strong></label>
+                <select id="Gen">
+                    <option value="Batch">Batch</option>
+                    <option value="Branch">Branch</option>
+                  </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onclick="sorting()">Sort</button>
+        </div>
+    </div>
+    </center>
+    </div>
+    <script src="sagarika.js">
+    </script>
+</body>
+</html>

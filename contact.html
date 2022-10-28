@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* main content */
+#contact{
+    height: 100vh;
+    width: 100%;
+    background: url('Images/contact_bc.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+}
+.container_contact1{
+    position: relative;
+    top:8%;
+    height: 60vh;
+    width: 48%;
+    /* padding: 50px 100px; */
+    background: url('Images/19873.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+
+#contact .content{
+    width: 100%;
+    position: relative;
+    top: 5%;
+    height: 7vh;
+    /* border: 1px solid green; */
+}
+#contact .content h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 1600;
+    color: rgba(18, 17, 17, 0.831);
+    position: relative;
+    bottom: 45%;
+    background-color: #00bcd4;
+    width: 45%;
+}
+
+.container_contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 70vh;
+    border: 4px solid rgb(34, 99, 88);
+    border-radius: 20px;
+}
+.cfrom1{
+    width: 80%;
+    padding: 40px;
+    background: #fff;
+}
+.cfrom1 form legend{
+    padding-bottom: 5%;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+.cfrom1 h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+    bottom: 10%;
+}
+
+.cfrom1 .inputbox{
+    position: relative;
+    width: 100%;
+    margin: top 10px ;
+}
+
+.cfrom1 .inputbox input,
+.cfrom1 .inputbox textarea
+{
+    width: 100%;
+    margin:10px 0 ;
+    padding: 5px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.cfrom1 .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.cfrom1 .inputbox input:focus ~ span,
+.cfrom1 .inputbox input:valid ~ span,
+.cfrom1 .inputbox textarea:focus ~ span,
+.cfrom1 .inputbox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.cfrom1 .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* normal text form start */
+.normal_text_form{
+    /* font-size: 26px; */
+    color: #666; 
+}
+
+
+
+/* map start */
+.map{
+    width: 40%;
+    height: 20vh;
+    /* border: 1px solid red; */
+    position: relative;
+    float: right;
+    right: 5%;
+    bottom: 49%;
+}
+/* map end */
+/* normal text form end */
+
+
+/* contact end  */
+    </style>
+</head>
+<body>
+    <section id="contact">
+        <!-- /* main content */ -->
+        <div class="content">
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="container_contact1">
+            <div class="container_contact">
+                <!-- Self details  -->
+                <div class="cfrom1">
+                    <form action="">
+                        <legend>Enter Your Detail</legend>
+                        <div class="inputbox">
+                            <input type="text" name="" id="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="email" name="" id="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="number" name="" id="" required="required">
+                            <span>Phone No</span>
+                        </div>
+                
+                        <div class="inputbox">
+                            <textarea name="" required="required"></textarea>
+                            <span>Address</span>
+                        </div>
+                        <div class="inputbox">
+                            <textarea name="" required="required"></textarea>
+                            <span>Your Message</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=674&amp;height=494&amp;hl=en&amp;q=lovely professional &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://piratebay-proxys.com/">Pirate bay</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:494px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:494px;}.gmap_iframe {height:494px!important;}</style></div>
+        </div>
+    </section>
+</body>
+</html>

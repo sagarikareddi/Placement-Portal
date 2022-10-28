@@ -1,0 +1,57 @@
+#main_table,#main_table_c{
+    border:2px solid red;
+    margin: 15px;
+    padding-bottom: 5px;
+    position: relative;
+    justify-content: center;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
+#main_div,#Sorted_table{
+    margin-top: 10px;
+    border: 5px solid orange;
+    width:fit-content;
+    background-color: aqua;
+    height:auto;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc;
+    padding-bottom: 15px;
+}
+table, th, td {
+    border: 3px solid;
+}
+td{
+    height: 20px;
+    width: 175px;
+}
+.S_No,.Name,.Reg._No.CGPA,.Attendence,.Eligibility,.Btach,.Branch{
+    width: 40px;
+}
+#GR1,#GM1{
+    margin-left: 10px;
+}
+#GR1{
+    margin-bottom: 10px;
+}
+.get_el_bu{
+    float: right;
+    margin-right: 10px;
+}
+button:hover{
+    background-color: green;
+    box-shadow: 10px 10px 5px #888;
+}
+input,button{
+    box-shadow: 4px 4px 2px #888;
+}
+input:hover{
+    box-shadow: 10px 10px 5px #888;
+}
+body{
+    background-color: burlywood;
+}
+#sort{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placement portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+<!-- /*----------- Student Placement Officer start---------------- */ -->
+    <section>
+        <div class="homepage2">
+            <div class="heading"><img src="heading.png">
+            </div>
+            <div class="container">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-users" aria-hidden="true"></i>  
+                        </div>
+                        <div class="content">
+                            <h3>Student</h3>
+                            <p>The student portal which give the ultimate forbidden services and accommodating visibility with the functionalities </p>
+                            <div class="btn">
+                                <a href="login_page_student.html">
+
+                                    <button>Click Here</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i>
+                            
+                        </div>
+                        <div class="content">
+                            <h3>Placement Office</h3>
+                            <p> The office which paves you the accompanied pathway with the appropriate guidance,interactive user makeover with multifunctionalities and maintainance </p>
+                            <div class="btn">
+                                <a href="login_page - Placement.html">
+
+                                    <button>Click Here</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /* side nav bar start  */ -->
+                    <div class="side_bar">
+                        <div class="side_menu">
+                            <div class="side_toggle" onclick="abc()"><i class="fa-solid fa-plus"></i></div>
+                            <li style="--i:0">
+                                <!-- <a href="#">
+                                    
+                                </a> -->
+                                <!-- <a href="javascript:window.open('some.html', 'yourWindowName', 'width=200,height=150',);"> -->
+                                    <a href="#" onclick="window.open('university_top.html', 'yourWindowName', 'width=900,height=850');">
+                                    <i class="fa-solid fa-earth-asia"></i>
+                                </a>
+                            </li>
+                            <li style="--i:1">
+                                <a href="#" onclick="window.open('university_placement.html', 'yourWindowName', 'width=900,height=850');">
+                                    <i class="fa-solid fa-children"></i>
+                                </a>
+                            </li>
+                            <li style="--i:2">
+                                <a href="#" onclick="window.open('university_pl.html', 'yourWindowName', 'width=900,height=850');">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </a>
+                            </li>
+                            <li style="--i:3">
+                                <a href="#" onclick="window.open('contact.html', 'yourWindowName', 'width=900,height=850');">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            </li>
+                        </div>
+                    </div>
+                    <!-- /* side nav bar end */ -->
+            </div> 
+
+
+        </div>
+    </section>
+
+<script>
+let a= document.querySelector('.side_menu').classList;
+    var c=0;
+    function abc(){
+        if(c==0){
+        a.add("active");
+       c++;
+       }
+       else{
+        a.remove("active");
+        c=0;
+       }
+    }
+
+</script>
+</body>
+</html>
